@@ -21,8 +21,8 @@
             <div class="card-body">
                 <div class="media">
                     <div class="mr-3">
-                        {{--  <a href="{{ route('my_account') }}"><img src="{{ Auth::user()->photo }}" width="38" height="38" class="rounded-circle" alt="photo"></a>  --}}
-                        <a href="{{ route('my_account') }}"><img src="{{ asset('global_assets/images/user.png') }}" width="38" height="38" class="rounded-circle" alt="photo"></a>
+                        <a href="{{ route('my_account') }}"><img src="{{ Auth::user()->photo }}" width="38" height="38" class="rounded-circle" alt="photo"></a>
+                        {{--  <a href="{{ route('my_account') }}"><img src="{{ asset('global_assets/images/user.png') }}" width="38" height="38" class="rounded-circle" alt="photo"></a>  --}}
                     </div>
 
                     <div class="media-body">

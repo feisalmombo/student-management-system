@@ -105,8 +105,8 @@
                         <label class="col-lg-3 col-form-label font-weight-semibold">Change Logo:</label>
                         <div class="col-lg-9">
                             <div class="mb-3">
-                                {{--  <img style="width: 100px" height="100px" src="{{ $s['logo'] }}" alt="Logo">  --}}
-                                <img style="width: 100px" height="100px" src="{{ $ct['logo'] }}" alt="Logo">
+                                <img style="width: 100px" height="100px" src="{{ $s['logo'] }}" alt="Logo">
+                                {{--  <img style="width: 100px" height="100px" src="{{ $ct['logo'] }}" alt="Logo">  --}}
                             </div>
                             <input name="logo" accept="image/*" type="file" class="file-input" data-show-caption="false" data-show-upload="false" data-fouc>
                         </div>
