@@ -167,6 +167,8 @@ class PaymentController extends Controller
             $d['my_class_id'] = $class_id;
         }
 
+        // return json_encode($d);
+
         return view('pages.support_team.payments.manage', $d);
     }
 
