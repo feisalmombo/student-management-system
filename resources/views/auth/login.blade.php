@@ -15,7 +15,7 @@
                     <div class="card mb-0">
                         <div class="card-body">
                             <div class="text-center mb-3">
-                                <i class="icon-people icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i>
+                                <i class="icon-user icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i>
                                 <h5 class="mb-0">Login to your account</h5>
                                 <span class="d-block text-muted">Your credentials</span>
                             </div>

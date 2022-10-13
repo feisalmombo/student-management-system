@@ -1,6 +1,42 @@
 <?php
 
-Auth::routes();
+// Auth::routes();
+
+Route::get('login', [
+	'as' => 'login',
+	'uses' => 'Auth\LoginController@showLoginForm'
+  ]);
+  Route::post('login', [
+	'as' => '',
+	'uses' => 'Auth\LoginController@login'
+  ]);
+  Route::post('logout', [
+	'as' => 'logout',
+	'uses' => 'Auth\LoginController@logout'
+  ]);
+
+  // PASSWORD RESET ROUTES
+  Route::post('password/email', [
+	'as' => 'password.email',
+	'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail'
+  ]);
+
+  // ROUTE FOR FORGOTPASSWORD CONTROLLER
+  Route::get('password/reset', [
+	'as' => 'password.request',
+	'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm'
+  ]);
+  // ROUTE FOR RESETPASSWORD CONTROLLER
+  Route::post('password/reset', [
+	'as' => 'password.update',
+	'uses' => 'Auth\ResetPasswordController@reset'
+  ]);
+
+  // ROUTE FOR RESETPASSWORD WITH TOKEN
+  Route::get('password/reset/{token}', [
+	'as' => 'password.reset',
+	'uses' => 'Auth\ResetPasswordController@showResetForm'
+  ]);
 
 //Route::get('/test', 'TestController@index')->name('test');
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');
