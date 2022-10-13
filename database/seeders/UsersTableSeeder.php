@@ -67,7 +67,7 @@ class UsersTableSeeder extends Seeder
             ],
 
             ['name' => 'Accountant',
-                'email' => 'accountant@gmail.com.com',
+                'email' => 'accountant@gmail.com',
                 'user_type' => 'accountant',
                 'username' => 'accountant',
                 'password' => $password,
