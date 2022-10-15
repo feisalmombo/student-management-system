@@ -7,7 +7,7 @@
         <div class="content-wrapper">
 
             <!-- Content area -->
-            <div class="content d-flex justify-content-center align-items-center">
+            <div class="content d-flex justify-content-center align-items-center" style="background-color: #00796B">
 
                 <!-- Login card -->
                 <form class="login-form " method="post" action="{{ route('login') }}">
