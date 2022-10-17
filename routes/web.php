@@ -2,6 +2,7 @@
 
 // Auth::routes();
 
+// LOGIN ROUTES
 Route::get('login', [
 	'as' => 'login',
 	'uses' => 'Auth\LoginController@showLoginForm'
