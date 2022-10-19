@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helpers\Qs;
 use App\Repositories\UserRepo;
+use DB;
 
 class HomeController extends Controller
 {
@@ -41,6 +42,10 @@ class HomeController extends Controller
         if(Qs::userIsTeamSAT()){
             $d['users'] = $this->user->getAll();
         }
+
+        $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
+
+        // return json_encode($allStudent);
 
         return view('pages.support_team.dashboard', $d);
     }
