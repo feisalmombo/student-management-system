@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\Qs;
 use App\Repositories\UserRepo;
 use DB;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -42,6 +43,10 @@ class HomeController extends Controller
         if(Qs::userIsTeamSAT()){
             $d['users'] = $this->user->getAll();
         }
+
+
+        $usersuperadmin = Auth::user()->id;
+        // return json_encode($usersuperadmin);
 
         $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
 
