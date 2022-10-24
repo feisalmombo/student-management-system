@@ -201,6 +201,8 @@ Route::group(['namespace' => 'SuperAdmin','middleware' => 'super_admin', 'prefix
 
 });
 
+Route::get('/all/students', 'AllStudentsController@getAllStudents');
+
 /************************ PARENT ****************************/
 Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(){
 

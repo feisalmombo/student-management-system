@@ -97,6 +97,12 @@
                         <a href="#" class="nav-link"><i class="icon-users"></i> <span> Students</span></a>
 
                         <ul class="nav nav-group-sub" data-submenu-title="Manage Students">
+                            {{--  All students  --}}
+                            <li class="nav-item">
+                                <a href="{{ url('/all/students') }}"
+                                   class="nav-link">All Students</a>
+                            </li>
+
                             {{--Admit Student--}}
                             @if(Qs::userIsTeamSA())
                                 <li class="nav-item">
