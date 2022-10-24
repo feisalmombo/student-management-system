@@ -97,10 +97,16 @@
                         <a href="#" class="nav-link"><i class="icon-users"></i> <span> Students</span></a>
 
                         <ul class="nav nav-group-sub" data-submenu-title="Manage Students">
-                            {{--  All students  --}}
+                            {{--  All Students  --}}
                             <li class="nav-item">
                                 <a href="{{ url('/all/students') }}"
                                    class="nav-link">All Students</a>
+                            </li>
+
+                            {{--  All Teachers  --}}
+                            <li class="nav-item">
+                                <a href="{{ url('/all/teachers') }}"
+                                   class="nav-link">All Teachers</a>
                             </li>
 
                             {{--Admit Student--}}

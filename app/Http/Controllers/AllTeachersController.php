@@ -13,5 +13,7 @@ class AllTeachersController extends Controller
         $auth_super = Auth::user()->id;
 
         $allteachers = DB::table('users')->where('user_type', '=', 'teacher');
+
+        return view('pages.teachers_all.teachers');
     }
 }
