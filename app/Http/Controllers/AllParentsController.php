@@ -13,5 +13,7 @@ class AllParentsController extends Controller
         $auth_super = Auth::user()->id;
 
         $allparents = DB::table('users')->where('user_type', '=', 'parent');
+
+        return view('pages.parents_all.allparents');
     }
 }

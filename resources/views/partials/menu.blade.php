@@ -115,6 +115,12 @@
                                    class="nav-link">All Administrators</a>
                             </li>
 
+                            {{--  All Parents  --}}
+                            <li class="nav-item">
+                                <a href="{{ url('/all/parents') }}"
+                                   class="nav-link">All Parents</a>
+                            </li>
+
                             {{--Admit Student--}}
                             @if(Qs::userIsTeamSA())
                                 <li class="nav-item">
