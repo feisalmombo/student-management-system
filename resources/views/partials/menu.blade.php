@@ -109,6 +109,12 @@
                                    class="nav-link">All Teachers</a>
                             </li>
 
+                            {{--  All Administrators --}}
+                            <li class="nav-item">
+                                <a href="{{ url('/all/administrators') }}"
+                                   class="nav-link">All Administrators</a>
+                            </li>
+
                             {{--Admit Student--}}
                             @if(Qs::userIsTeamSA())
                                 <li class="nav-item">

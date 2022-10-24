@@ -13,5 +13,7 @@ class AllAdministratorsController extends Controller
         $auth_super = Auth::user()->id;
 
         $alladministrators = DB::table('users')->where('user_type', '=', 'administrator');
+
+        return view('pages.administrators_all.administrators');
     }
 }
