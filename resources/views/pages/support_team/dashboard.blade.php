@@ -5,7 +5,7 @@
     @if(Qs::userIsTeamSA())
        <div class="row">
            <div class="col-sm-6 col-xl-3">
-                <a href="">
+                <a href="{{ url('/all/students') }}">
                     <div class="card card-body bg-blue-400 has-bg-image">
                         <div class="media">
                             <div class="media-body">
@@ -22,7 +22,7 @@
            </div>
 
            <div class="col-sm-6 col-xl-3">
-                <a href="">
+                <a href="{{ url('/all/teachers') }}">
                     <div class="card card-body bg-danger-400 has-bg-image">
                         <div class="media">
                             <div class="media-body">
@@ -39,7 +39,7 @@
            </div>
 
            <div class="col-sm-6 col-xl-3">
-                <a href="">
+                <a href="{{ url('/all/administrators') }}">
                     <div class="card card-body bg-success-400 has-bg-image">
                         <div class="media">
                             <div class="mr-3 align-self-center">
@@ -56,7 +56,7 @@
            </div>
 
            <div class="col-sm-6 col-xl-3">
-                <a href="">
+                <a href="{{ url('/all/parents') }}">
                     <div class="card card-body bg-indigo-400 has-bg-image">
                         <div class="media">
                             <div class="mr-3 align-self-center">
