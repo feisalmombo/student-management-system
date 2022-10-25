@@ -44,6 +44,4 @@
     </div>
 </div>
 
-{{--Student List Ends--}}
-
 @endsection
