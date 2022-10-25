@@ -10,8 +10,6 @@ class AllStudentsController extends Controller
 {
     public function getAllStudents()
     {
-        $auth_super = Auth::user()->id;
-
         $allstudents = DB::table('users')->where('user_type', '=', 'student')->get();
 
         return view('pages.students_all.students')->with('students', $allstudents);

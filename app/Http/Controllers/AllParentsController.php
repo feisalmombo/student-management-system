@@ -10,7 +10,6 @@ class AllParentsController extends Controller
 {
     public function getAllparents()
     {
-        $auth_parent = Auth::user()->id;
 
         $allparents = DB::table('users')->where('user_type', '=', 'parent')->get();
 
