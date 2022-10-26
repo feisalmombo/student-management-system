@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-sm-6 col-xl-3">
                 <a href="#">
-                    <div class="card card-body bg-blue-400 has-bg-image">
+                    <div class="card card-body bg-green-400 has-bg-image">
                         <div class="media">
                             <div class="media-body">
                                 <h3 class="mb-0">34</h3>
@@ -86,24 +86,7 @@
                             </div>
 
                             <div class="ml-3 align-self-center">
-                                <i class="icon-users4 icon-3x opacity-75"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-sm-6 col-xl-3">
-                <a href="#">
-                    <div class="card card-body bg-danger-400 has-bg-image">
-                        <div class="media">
-                            <div class="media-body">
-                                <h3 class="mb-0">56</h3>
-                                <span class="text-uppercase font-size-xs">Total Classes</span>
-                            </div>
-
-                            <div class="ml-3 align-self-center">
-                                <i class="icon-users2 icon-3x opacity-75"></i>
+                                <i class="icon-box icon-3x opacity-75"></i>
                             </div>
                         </div>
                     </div>
@@ -114,8 +97,25 @@
                 <a href="#">
                     <div class="card card-body bg-success-400 has-bg-image">
                         <div class="media">
+                            <div class="media-body">
+                                <h3 class="mb-0">56</h3>
+                                <span class="text-uppercase font-size-xs">Total Classes</span>
+                            </div>
+
+                            <div class="ml-3 align-self-center">
+                                <i class="icon-pen icon-3x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="#">
+                    <div class="card card-body bg-warning-400 has-bg-image">
+                        <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="icon-pointer icon-3x opacity-75"></i>
+                                <i class="icon-car icon-3x opacity-75"></i>
                             </div>
 
                             <div class="media-body text-right">
@@ -129,10 +129,10 @@
 
             <div class="col-sm-6 col-xl-3">
                 <a href="#">
-                    <div class="card card-body bg-indigo-400 has-bg-image">
+                    <div class="card card-body bg-pink-400 has-bg-image">
                         <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="icon-user icon-3x opacity-75"></i>
+                                <i class="icon-pencil icon-3x opacity-75"></i>
                             </div>
 
                             <div class="media-body text-right">
