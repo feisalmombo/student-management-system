@@ -1,8 +1,6 @@
 <?php
 
-// Auth::routes();
-
-// LOGIN ROUTES
+// Login Routes
 Route::get('login', [
 	'as' => 'login',
 	'uses' => 'Auth\LoginController@showLoginForm'
@@ -11,35 +9,36 @@ Route::get('login', [
 	'as' => '',
 	'uses' => 'Auth\LoginController@login'
   ]);
+
+//   Logout Routes
   Route::post('logout', [
 	'as' => 'logout',
 	'uses' => 'Auth\LoginController@logout'
   ]);
 
-  // PASSWORD RESET ROUTES
+  // Password Reset Routes
   Route::post('password/email', [
 	'as' => 'password.email',
 	'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail'
   ]);
 
-  // ROUTE FOR FORGOTPASSWORD CONTROLLER
+  // Route for Forgotpassword Controller
   Route::get('password/reset', [
 	'as' => 'password.request',
 	'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm'
   ]);
-  // ROUTE FOR RESETPASSWORD CONTROLLER
+  // Rout for Resetpassword Controller
   Route::post('password/reset', [
 	'as' => 'password.update',
 	'uses' => 'Auth\ResetPasswordController@reset'
   ]);
 
-  // ROUTE FOR RESETPASSWORD WITH TOKEN
+  // Route for Resetpassword with Token
   Route::get('password/reset/{token}', [
 	'as' => 'password.reset',
 	'uses' => 'Auth\ResetPasswordController@showResetForm'
   ]);
 
-//Route::get('/test', 'TestController@index')->name('test');
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');
 Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use');
 
