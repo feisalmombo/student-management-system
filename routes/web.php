@@ -174,6 +174,7 @@ Route::group(['middleware' => 'auth'], function () {
 
         });
 
+        // Another Routes
         Route::resource('students', 'StudentRecordController');
         Route::resource('users', 'UserController');
         Route::resource('classes', 'MyClassController');
