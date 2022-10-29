@@ -155,7 +155,7 @@ Route::group(['middleware' => 'auth'], function () {
                 Route::get('tabulation/print/{exam}/{class}/{sec_id}', 'MarkController@print_tabulation')->name('marks.print_tabulation');
             });
 
-            // FOR teamSAT
+            // FOR teamSAT Route
             Route::group(['middleware' => 'teamSAT'], function(){
                 Route::get('/', 'MarkController@index')->name('marks.index');
                 Route::get('manage/{exam}/{class}/{section}/{subject}', 'MarkController@manage')->name('marks.manage');
