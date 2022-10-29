@@ -146,7 +146,7 @@ Route::group(['middleware' => 'auth'], function () {
         /*************** Marks Route *****************/
         Route::group(['prefix' => 'marks'], function(){
 
-           // FOR teamSA
+           // FOR teamSA Route
             Route::group(['middleware' => 'teamSA'], function(){
                 Route::get('batch_fix', 'MarkController@batch_fix')->name('marks.batch_fix');
                 Route::put('batch_update', 'MarkController@batch_update')->name('marks.batch_update');
