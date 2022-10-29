@@ -58,7 +58,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('/change_password', 'MyAccountController@change_pass')->name('my_account.change_pass');
     });
 
-    /*************** Support Team *****************/
+    /*************** Support Team Route *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){
 
         /*************** Students *****************/
