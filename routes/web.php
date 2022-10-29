@@ -39,7 +39,10 @@ Route::get('login', [
 	'uses' => 'Auth\ResetPasswordController@showResetForm'
   ]);
 
+  // Route for Privacy policy
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');
+
+  // Route for terms of use
 Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use');
 
 
