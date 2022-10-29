@@ -78,12 +78,12 @@ Route::group(['middleware' => 'auth'], function () {
 
         });
 
-        /*************** Users *****************/
+        /*************** Users Route *****************/
         Route::group(['prefix' => 'users'], function(){
             Route::get('reset_pass/{id}', 'UserController@reset_pass')->name('users.reset_pass');
         });
 
-        /*************** TimeTables *****************/
+        /*************** TimeTables Route *****************/
         Route::group(['prefix' => 'timetables'], function(){
             Route::get('/', 'TimeTableController@index')->name('tt.index');
 
