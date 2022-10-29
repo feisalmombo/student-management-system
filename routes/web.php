@@ -93,7 +93,7 @@ Route::group(['middleware' => 'auth'], function () {
                 Route::delete('/{tt}', 'TimeTableController@delete')->name('tt.delete');
             });
 
-            /*************** TimeTable Records *****************/
+            /*************** TimeTable Records Route *****************/
             Route::group(['prefix' => 'records'], function(){
 
                 Route::group(['middleware' => 'teamSA'], function(){
