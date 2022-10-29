@@ -133,7 +133,7 @@ Route::group(['middleware' => 'auth'], function () {
             Route::post('pay_now/{id}', 'PaymentController@pay_now')->name('payments.pay_now');
         });
 
-        /*************** Pins *****************/
+        /*************** Pins Route *****************/
         Route::group(['prefix' => 'pins'], function(){
             Route::get('create', 'PinController@create')->name('pins.create');
             Route::get('/', 'PinController@index')->name('pins.index');
@@ -143,7 +143,7 @@ Route::group(['middleware' => 'auth'], function () {
             Route::delete('/', 'PinController@destroy')->name('pins.destroy');
         });
 
-        /*************** Marks *****************/
+        /*************** Marks Route *****************/
         Route::group(['prefix' => 'marks'], function(){
 
            // FOR teamSA
