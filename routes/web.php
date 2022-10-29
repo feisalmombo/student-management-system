@@ -210,7 +210,7 @@ Route::get('/all/teachers', 'AllTeachersController@getAllTeachers');
 Route::get('/all/administrators', 'AllAdministratorsController@getAllAdministrators');
 Route::get('/all/parents', 'AllParentsController@getAllparents');
 
-/************************ PARENT ****************************/
+/************************ PARENT ROUTES ****************************/
 Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(){
 
     Route::get('/my_children', 'MyController@children')->name('my_children');
