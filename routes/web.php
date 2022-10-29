@@ -204,7 +204,7 @@ Route::group(['namespace' => 'SuperAdmin','middleware' => 'super_admin', 'prefix
 
 });
 
-/************************ COUNT USERS LINKS ****************************/
+/************************ COUNT USERS LINKS ROUTES ****************************/
 Route::get('/all/students', 'AllStudentsController@getAllStudents');
 Route::get('/all/teachers', 'AllTeachersController@getAllTeachers');
 Route::get('/all/administrators', 'AllAdministratorsController@getAllAdministrators');
