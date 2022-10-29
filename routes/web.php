@@ -167,6 +167,7 @@ Route::group(['middleware' => 'auth'], function () {
                 Route::post('bulk', 'MarkController@bulk_select')->name('marks.bulk_select');
             });
 
+            // Year Route
             Route::get('select_year/{id}', 'MarkController@year_selector')->name('marks.year_selector');
             Route::post('select_year/{id}', 'MarkController@year_selected')->name('marks.year_select');
             Route::get('show/{id}/{year}', 'MarkController@show')->name('marks.show');
