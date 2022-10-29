@@ -109,7 +109,7 @@ Route::group(['middleware' => 'auth'], function () {
 
             });
 
-            /*************** Time Slots *****************/
+            /*************** Time Slots Route *****************/
             Route::group(['prefix' => 'time_slots', 'middleware' => 'teamSA'], function(){
                 Route::post('/', 'TimeTableController@store_time_slot')->name('ts.store');
                 Route::post('/use/{ttr}', 'TimeTableController@use_time_slot')->name('ts.use');
@@ -120,7 +120,7 @@ Route::group(['middleware' => 'auth'], function () {
 
         });
 
-        /*************** Payments *****************/
+        /*************** Payments Route *****************/
         Route::group(['prefix' => 'payments'], function(){
 
             Route::get('manage/{class_id?}', 'PaymentController@manage')->name('payments.manage');
