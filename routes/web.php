@@ -196,7 +196,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 });
 
-/************************ SUPER ADMIN ****************************/
+/************************ SUPER ADMIN ROUTES ****************************/
 Route::group(['namespace' => 'SuperAdmin','middleware' => 'super_admin', 'prefix' => 'super_admin'], function(){
 
     Route::get('/settings', 'SettingController@index')->name('settings');
