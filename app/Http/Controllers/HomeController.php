@@ -46,11 +46,8 @@ class HomeController extends Controller
 
 
         $usersuperadmin = Auth::user()->id;
-        // return json_encode($usersuperadmin);
 
         $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
-
-        // return json_encode($allStudent);
 
         return view('pages.support_team.dashboard', $d);
     }

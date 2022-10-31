@@ -153,6 +153,83 @@
     </div>
     @endif
 
+    {{--  Students view dashboard details  --}}
+    @if (auth()->check())
+        @if (auth()->user()->user_type == 'student')
+        <div class="row">
+            <div class="col-sm-6 col-xl-3">
+                <a href="#">
+                    <div class="card card-body bg-green-400 has-bg-image">
+                        <div class="media">
+                            <div class="media-body">
+                                <h3 class="mb-0">34</h3>
+                                <span class="text-uppercase font-size-xs font-weight-bold">Total Subjects</span>
+                            </div>
+
+                            <div class="ml-3 align-self-center">
+                                <i class="icon-box icon-3x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="#">
+                    <div class="card card-body bg-success-400 has-bg-image">
+                        <div class="media">
+                            <div class="media-body">
+                                <h3 class="mb-0">56</h3>
+                                <span class="text-uppercase font-size-xs">Total Classes</span>
+                            </div>
+
+                            <div class="ml-3 align-self-center">
+                                <i class="icon-pen icon-3x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="#">
+                    <div class="card card-body bg-warning-400 has-bg-image">
+                        <div class="media">
+                            <div class="mr-3 align-self-center">
+                                <i class="icon-car icon-3x opacity-75"></i>
+                            </div>
+
+                            <div class="media-body text-right">
+                                <h3 class="mb-0">40</h3>
+                                <span class="text-uppercase font-size-xs">Total Dormitories</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="#">
+                    <div class="card card-body bg-pink-400 has-bg-image">
+                        <div class="media">
+                            <div class="mr-3 align-self-center">
+                                <i class="icon-pencil icon-3x opacity-75"></i>
+                            </div>
+
+                            <div class="media-body text-right">
+                                <h3 class="mb-0">700</h3>
+                                <span class="text-uppercase font-size-xs">Total Subjects</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        @else
+      @endif
+    @endif
+
+
     {{--Events Calendar Begins--}}
     <div class="card">
         <div class="card-header header-elements-inline">
