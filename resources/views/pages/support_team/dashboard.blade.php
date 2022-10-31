@@ -146,6 +146,13 @@
         </div>
     @endif
 
+
+    @if(Qs::userIsTeamSA())
+    <div class="card">
+        {{--  Draw chart for important details like users, subjects, classes  --}}
+    </div>
+    @endif
+
     {{--Events Calendar Begins--}}
     <div class="card">
         <div class="card-header header-elements-inline">
