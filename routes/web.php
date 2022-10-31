@@ -48,10 +48,12 @@ Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use')
 
 Route::group(['middleware' => 'auth'], function () {
 
+    // HomeController and Home Routes
     Route::get('/', 'HomeController@dashboard')->name('home');
     Route::get('/home', 'HomeController@dashboard')->name('home');
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
+    // My Account Routes
     Route::group(['prefix' => 'my_account'], function() {
         Route::get('/', 'MyAccountController@edit_profile')->name('my_account');
         Route::put('/', 'MyAccountController@update_profile')->name('my_account.update');
@@ -61,7 +63,7 @@ Route::group(['middleware' => 'auth'], function () {
     /*************** Support Team Route *****************/
     Route::group(['namespace' => 'SupportTeam',], function(){
 
-        /*************** Students *****************/
+        /*************** Students Routes *****************/
         Route::group(['prefix' => 'students'], function(){
             Route::get('reset_pass/{st_id}', 'StudentRecordController@reset_pass')->name('st.reset_pass');
             Route::get('graduated', 'StudentRecordController@graduated')->name('students.graduated');
