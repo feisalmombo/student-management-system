@@ -19,8 +19,6 @@ class AjaxController extends Controller
 
     public function get_lga($state_id)
     {
-//        $state_id = Qs::decodeHash($state_id);
-//        return ['id' => Qs::hash($q->id), 'name' => $q->name];
 
         $lgas = $this->loc->getLGAs($state_id);
         return $data = $lgas->map(function($q){
