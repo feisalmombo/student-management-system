@@ -44,9 +44,6 @@ class HomeController extends Controller
             $d['users'] = $this->user->getAll();
         }
 
-
-        $usersuperadmin = Auth::user()->id;
-
         $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
 
         return view('pages.support_team.dashboard', $d);
