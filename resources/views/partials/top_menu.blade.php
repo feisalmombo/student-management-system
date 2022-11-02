@@ -4,11 +4,6 @@
         <h4 class="text-bold text-white">{{ Qs::getSystemName() }}</h4>
         </a>
     </div>
-  {{--  <div class="navbar-brand">
-        <a href="index.html" class="d-inline-block">
-            <img src="{{ asset('global_assets/images/logo_light.png') }}" alt="">
-        </a>
-    </div>--}}
 
     <div class="d-md-none">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
@@ -37,7 +32,6 @@
             <li class="nav-item dropdown dropdown-user">
                 <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
                     <img style="width: 38px; height:38px;" src="{{ Auth::user()->photo }}" class="rounded-circle" alt="photo">
-                    {{--  <img style="width: 38px; height:38px;" src="{{ asset('global_assets/images/user.png') }}" class="rounded-circle" alt="photo">  --}}
                     <span>{{ Auth::user()->name }}</span>
                 </a>
 
