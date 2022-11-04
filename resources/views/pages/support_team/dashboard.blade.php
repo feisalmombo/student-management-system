@@ -147,11 +147,11 @@
     @endif
 
 
-    @if(Qs::userIsTeamSA())
+    {{--  @if(Qs::userIsTeamSA())
     <div class="card">
-        {{--  Draw chart for important details like users, subjects, classes  --}}
+
     </div>
-    @endif
+    @endif  --}}
 
     {{--  Students view dashboard details  --}}
     @if (auth()->check())
