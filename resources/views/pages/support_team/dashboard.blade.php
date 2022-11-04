@@ -81,7 +81,7 @@
                     <div class="card card-body bg-green-400 has-bg-image">
                         <div class="media">
                             <div class="media-body">
-                                <h3 class="mb-0">34</h3>
+                                <h3 class="mb-0">345</h3>
                                 <span class="text-uppercase font-size-xs font-weight-bold">Total Subjects</span>
                             </div>
 
@@ -98,7 +98,7 @@
                     <div class="card card-body bg-success-400 has-bg-image">
                         <div class="media">
                             <div class="media-body">
-                                <h3 class="mb-0">56</h3>
+                                <h3 class="mb-0">566</h3>
                                 <span class="text-uppercase font-size-xs">Total Classes</span>
                             </div>
 
@@ -119,7 +119,7 @@
                             </div>
 
                             <div class="media-body text-right">
-                                <h3 class="mb-0">40</h3>
+                                <h3 class="mb-0">407</h3>
                                 <span class="text-uppercase font-size-xs">Total Dormitories</span>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                             </div>
 
                             <div class="media-body text-right">
-                                <h3 class="mb-0">700</h3>
+                                <h3 class="mb-0">708</h3>
                                 <span class="text-uppercase font-size-xs">Total Subjects</span>
                             </div>
                         </div>
