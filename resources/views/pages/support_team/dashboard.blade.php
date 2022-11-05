@@ -147,11 +147,11 @@
     @endif  --}}
 
 
-    {{--  @if(Qs::userIsTeamSA())
+    @if(Qs::userIsTeamSA())
     <div class="card">
-
+        // Mention another list here
     </div>
-    @endif  --}}
+    @endif
 
     {{--  Students view dashboard details  --}}
     @if (auth()->check())
