@@ -74,7 +74,7 @@
        </div>
     @endif
 
-    {{--  @if(Qs::userIsTeamSA())
+    @if(Qs::userIsTeamSA())
         <div class="row">
             <div class="col-sm-6 col-xl-3">
                 <a href="#">
@@ -144,7 +144,7 @@
                 </a>
             </div>
         </div>
-    @endif  --}}
+    @endif
 
 
     @if(Qs::userIsTeamSA())
