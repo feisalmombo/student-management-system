@@ -149,7 +149,7 @@
 
     @if(Qs::userIsTeamSA())
     <div class="card">
-        // Mention another list here
+        {{--  Mention another list here or Draw charts, barchart or piecharts here  --}}
     </div>
     @endif
 
