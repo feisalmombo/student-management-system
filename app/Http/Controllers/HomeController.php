@@ -46,6 +46,8 @@ class HomeController extends Controller
 
         $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
 
+        // pass all students information here
+
         return view('pages.support_team.dashboard', $d);
     }
 }
