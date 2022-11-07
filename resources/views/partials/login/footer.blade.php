@@ -8,7 +8,7 @@
 
     <div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; {{ date('Y') }}. <a href="#">{{ Qs::getSystemName() }} Version 3.0.0</a> by <a href="https://feisalmombo.herokuapp.com" >Feisal Suleiman Mombo</a>
+						&copy; {{ date('Y') }}. <a href="#">{{ Qs::getSystemName() }} Version 4.0.0</a> by <a href="https://feisalmombo.herokuapp.com" >Feisal Suleiman Mombo</a>
 					</span>
 
         <ul class="navbar-nav ml-lg-auto">
