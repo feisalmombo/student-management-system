@@ -45,6 +45,7 @@ class HomeController extends Controller
         }
 
         $allStudent = DB::table('users')->where('user_type', '=', 'student')->count();
+        // dd($allStudent);
 
         // pass all students information here
 
