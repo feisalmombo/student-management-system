@@ -218,6 +218,9 @@ Route::get('/daily-reports', 'ReportsController@dailyReports');
 Route::get('/weekly-reports', 'ReportsController@weeklyReports');
 Route::get('/monthly', 'ReportsController@monthlyReports');
 
+/************************ RESULTS ROUTES ****************************/
+Route::resource('/results', 'ResultsController');
+
 /************************ PARENT ROUTES ****************************/
 Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(){
 
