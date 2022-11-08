@@ -213,6 +213,11 @@ Route::get('/all/teachers', 'AllTeachersController@getAllTeachers');
 Route::get('/all/administrators', 'AllAdministratorsController@getAllAdministrators');
 Route::get('/all/parents', 'AllParentsController@getAllparents');
 
+/************************ REPORTS ROUTES ****************************/
+Route::get('/daily-reports', 'ReportsController@dailyReports');
+Route::get('/weekly-reports', 'ReportsController@weeklyReports');
+Route::get('/monthly', 'ReportsController@monthlyReports');
+
 /************************ PARENT ROUTES ****************************/
 Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(){
 
