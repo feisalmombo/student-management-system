@@ -16,6 +16,21 @@ class ReportsController extends Controller
         //
     }
 
+    public function dailyReports()
+    {
+        return view('pages.reports.dailyreports');
+    }
+
+    public function weeklyReports()
+    {
+        return view('pages.reports.weeklyreports');
+    }
+
+    public function monthlyReports()
+    {
+        return view('pages.reports.monthlyreports');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
