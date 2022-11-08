@@ -245,6 +245,35 @@
                     <a href="{{ route('my_account') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['my_account']) ? 'active' : '' }}"><i class="icon-user"></i> <span>My Account</span></a>
                 </li>
 
+                {{--  Manage Reports  --}}
+                @if(Qs::userIsTeamSAT())
+                <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-book"></i> <span> Reports</span></a>
+
+
+                    <ul class="nav nav-group-sub" data-submenu-title="Manage Students">
+                        {{--  Daily Reports  --}}
+                        <li class="nav-item">
+                            <a href="#"
+                               class="nav-link">Daily Reports</a>
+                        </li>
+
+                        {{--  Weekly Reports  --}}
+                        <li class="nav-item">
+                            <a href="#"
+                               class="nav-link">Weekly Reports</a>
+                        </li>
+
+                        {{--  Monthly Reports --}}
+                        <li class="nav-item">
+                            <a href="#"
+                               class="nav-link">Monthly Reports</a>
+                        </li>
+
+                    </ul>
+                </li>
+            @endif
+
                 </ul>
             </div>
         </div>
