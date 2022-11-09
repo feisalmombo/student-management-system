@@ -221,6 +221,9 @@ Route::get('/monthly', 'ReportsController@monthlyReports');
 /************************ RESULTS ROUTES ****************************/
 Route::resource('/results', 'ResultsController');
 
+/************************ PASTPAPERS ROUTES ****************************/
+Route::resource('/past-papers', 'PastpapersController');
+
 /************************ PARENT ROUTES ****************************/
 Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(){
 
