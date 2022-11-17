@@ -4,7 +4,7 @@
     <div class="page-content login-cover">
 
         <div class="content-wrapper">
-    <div class="content d-flex justify-content-center align-items-center">
+    <div class="content d-flex justify-content-center align-items-center" style="background-color: #00796B">
 
         <!-- Password recovery form -->
         <form class="login-form" method="POST" action="{{ route('password.email') }}">
