@@ -4,7 +4,7 @@
     <div class="page-content login-cover">
 
         <div class="content-wrapper">
-            <div class="content row justify-content-center">
+            <div class="content row justify-content-center" style="background-color: #00796B">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
